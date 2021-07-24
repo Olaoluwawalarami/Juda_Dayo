@@ -7,6 +7,25 @@
   </head>
 
   <body>
+  <style>
+
+    #nav-bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #cc0000;
+    color: white;
+    display: flex;
+    }
+    @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+  </style>
+
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
       <p>Hello World</p>
@@ -32,7 +51,7 @@
       </section>
 
       <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-        <input id="email" type="email" placeholder="#email" required="true">
+        <input id="email" type="email" placeholder="#email" required="true" name="email">
         <input id="submit" type="submit">
 
       </form>
